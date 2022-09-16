@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="flex flex-row justify-end space-x-2 mr-12 py-10">
+  <div class="flex flex-row  flex-inline justify-end gap-5 mr-12 py-10">
     <div class="text-md text-black  ">
       Gmail </div>
     <div class="text-md text-black">
@@ -23,16 +23,18 @@
         </path>
       </svg>
     </div>
-    <div class="text-md text-black">
-     <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="profile" class="w-6 h-6 rounded-full"> </div>
+    <div class="text-md text-black flex">
+      <img
+        src="https://media.istockphoto.com/photos/portrait-young-confident-smart-asian-businessman-look-at-camera-and-picture-id1288538088?b=1&k=20&m=1288538088&s=170667a&w=0&h=3efMku7kSXUhpVrErAVVgxp6G91tRZ_5seygOn68RnE="
+        alt="profile" class="aspect-w-6 aspect-h-6 w-6 h-6 rounded-full">
+    </div>
 
   </div>
 
   <div class="flex flex-col items-center justify-center py-24">
     <div class="mb-6">
-      <img
-        src="https://seeklogo.com/images/G/google-2015-new-logo-FFFC46553B-seeklogo.com.png"
-        alt="google-logo" class="object-cover" />
+      <img src="https://seeklogo.com/images/G/google-2015-new-logo-FFFC46553B-seeklogo.com.png" alt="google-logo"
+        class="object-cover" />
     </div>
 
     <div class="flex items-center border w-full mx-auto mb-4 rounded-full shadow-lg hover:shadow-md lg:max-w-2xl">
@@ -54,31 +56,49 @@
       </div>
 
     </div>
-    <div class="flex grid grid-cols-4 gap-10 justify-between py-6">
-      <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center relative">
-        <img src="https://seeklogo.com/images/L/linkedin-icon-logo-FBADE03110-seeklogo.com.png" class="w-5 h-5"
-          alt="linkedin">
+    <div class="flex grid grid-cols-4 gap-12 justify-between py-6">
+      <div class="flex flex-col items-center text-center justify-center">
+        <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center relative">
+          <img src="https://seeklogo.com/images/L/linkedin-icon-logo-FBADE03110-seeklogo.com.png" class="w-5 h-5"
+            alt="linkedin">
 
-      </button>
-      <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center">
-        <img src="https://seeklogo.com/images/G/google-meet-logo-0CF63C99D6-seeklogo.com.png" class="w-5 h-5"
-          alt="google-meet">
-      </button>
+        </button>
+        <h2 class="text-black text-sm mt-3 "> linkedin</h2>
+      </div>
+
+      <div class="flex flex-col items-center text-center justify-center">
+        <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center">
+          <img src="https://seeklogo.com/images/G/google-meet-logo-0CF63C99D6-seeklogo.com.png" class="w-5 h-5"
+            alt="google-meet">
+        </button>
+        <h2 class="text-black text-sm mt-3 "> gmeet</h2>
+      </div>
+
+      <div class="flex flex-col items-center text-center justify-center">
       <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center">
         <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png"
           class="w-5 h-5 bg-transparent" alt="whatsapp">
       </button>
+      <h2 class="text-black text-sm mt-3 "> whatsapp</h2>
+      </div>
+
+      <div class="flex flex-col items-center text-center justify-center">
       <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center">
         <img src="https://seeklogo.com/images/G/google-drive-logo-AEB3C41BB3-seeklogo.com.png" class="w-5 h-5"
           alt="drive">
       </button>
+      <h2 class="text-black text-sm mt-3 "> Gdrive</h2>
+    </div>
+
+    <div class="flex flex-col items-center text-center justify-center">
       <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center">
         <img src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png" class="w-5 h-5" alt="github">
       </button>
+      <h2 class="text-black text-sm mt-3 "> Github</h2>
+    </div>
+
       <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center">
-        <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQcAAADACAMAAAA+71YtAAAApVBMVEV4AJn39/f///9vAJP5+vjgzubGrdHUvd3ZwuJ1AJdyAJVuAJL9/P78/Pz5+fl6AJv8+P3y5vXp1u758/vt3fHYu+Hkz+r27PipcL22g8e7kcvhzOiQPavUtd6GKqO5iMnPrdqWTq/GodO+j82CIKCgXbaBFqCjZLnw6/JlAIyWSa/LqNeteMGeV7XEnNKMNaiqa76RQaypc72ZTLKHIKTIm9Xo3+xcgYkPAAAHuklEQVR4nO2daVvbOBCAg0SXjMxuDuckt8lRICSkpP3/P22dHbY0WI6lsXwkmfdjn/LUfpE1OmamlRvmQKXoBygJ7AFhDwh7QNgDwh4Q9oCwB4Q9IOwB+cPD7fWh8/D92/XxPerh9u5JXhtPd7caD7JybcgqezjAHhD2gLAHhD0g7AFhDwh7QNgDwh4Q9oCwB4Q9IOwBYQ+I3oNX9GPlDXi6c5jmzIOinyxX1Dio30Q83AhRfb4iEwr6vhAaD38LIdpjeR0mQgvd8H3jPIj6y1YV/YzZA6rXEuKUByH8l9qFBw7wXptCJHkIx8TDRX8cctYRwsSDEI2tulQTSgVCmHo4hI6LHBOq0m8IGw9CBPOLmybCINE8fkkDD0K81C4qdACsOl9f0ciDEA/qYkyAWnyLvqChB3E/uQwToLZfv4hYD/9o/2JjDWdvAuSwrX05Cw9CNPtnvuuQy+l9zLvZeBBisD3jIAreJvbFLD2Ea+3lmX4cIF+jQYLsQYhuv3KGJkDOWqfeyt5DOGFOzs0EeM/t2ImB7CE00T+nXQd4w1GSBZqH0MTruZgAuawmW6B6EKK1OIsgKsebrsnrmK4nNYzKf3SnahMzC3oP9yYDSRwOMUs9YULt0dRC3HgwNOGXeK0NKnYNbe4hNGH2481eSacJuR3VLTSkmB8+aK1KOE2o2oPVSzjwEI6J55IFUVXbWI0FRx7EfXtXojGh4MG3fYNkD4bzxHRYkstheFo3kh/X3oNp6BDTMuxEQa5IFoy+C0MT9U3RQTR5V5nKg7GJ7gIKnCZAjU8dtNh7+K4/yTShvS1sOaGWa8L0iNSrftTD7d3vS2AC1X0hoUPVftAtTIcxdUlhADZfmX+lPc59TCjVJ06PoYX20IPYPDG5t1mcH+NP870JBNWnj1//7fBbi8+XCyOQZpowjKF+kN/RHcBMdz9lRv0RH/RU3qDSmzDciT7kcycKake34Af/P+Tp/Mnws9NMPqYmejkEUbu99Rdelr/3RUl5pKoy0exYTI9psl5rK69HtzAd/7E7TM6nDXew9DHxh3H3gOzTg1pncRTeTfKKVS0gh2Y/mGc0TYDs0Zd7374ufI3yq0GOp+R/0t9ksf8Cb0G30HyLbIQM88xB7ekRut6Tjk2A95zicSaa7aBxvj3U3jQrNsNpouE0iSTcVdKDRH2qTY+1qDtQFd0puGHoaK1crbVTfaSis9M/divX9hZw/0sdEa+YkiKrli6F6Dc33uN+GXR0KqHmgW06YPVk1/Vob1Mr6APbTwokrBtt6HPCGU/LC6n6dbq0NsD2ZynGS1tupX4N9XVKMCTO6fboJUNsB2UI34eKNUp8F8nlAXlg11rTQEUZuepBo9JNOTml1aiDf6fG71SccWMlliv1UkHx+TK3XC9fauo/DbJ4Y7Cx3oqqS4gB28GoQqOdivi3IZkEWEJizGRLjnNZyHNX/WMruHTlG/CWqsGaumtz6DpeHRnZIP9F1lo2d4pZKqjhXUsko3YXTrA94P+kzUmBhHp5T1vADvOhNmj9lcJR1OgNzZJTEcWQgsYnTqumaAV40JQ1onC2YhnILIa+j6ZmxzZu6gvhtgQR+6ndisO5DzFHco06VdcHZS565qP+ir/pE+dKh5iulxsLc9DnRU76/2ur2w4aAeDSNjQkGPvGIN19D2e3xXfQ9AzXQZzIZxv30cRJXskW/phD+hnH656/8A6lmzGTRNGJh+BlHwUhzA1je0jZzLPhjg6SocTE30KjiY5ZBuQQSmq7MsPRzGxFoTOgxN/LfrUDX6TqIe0KuFXPdFUUC/gL8fzEF3e2b40+1Zijsj9/1hANbkgGe6JNdQTWMhmz459rmsqenEHsAW6CE0sdCttem/7AT8TerLw4z6JoFc0SdMW+6oQSJ7D4ePI0XosGHqJBsrwz5aatmj33+ZUnXU4inTfmL6rDuHJtzViGXcV03uN7okEjcWmgt3ecxZ95cDOf/p5q0jFlYus7mz77MHcqc94k9HY+U2uySPfoMgX+nbaD3Oaxzy6bsI+vxDqoXm2Hn2WV79JxU8Rj8O2mqik0UNVH59ONVeVztmbaK5ziSdP8d+pKB2I82LWZnoRjPd3JBrX1ZQ21Qm/EfXiXe/ybk/bWiCnNHSzbKHVe59erW9vEzGws9M8/cL6FesQLf/SqCTVXryB4X0bVY1y1yz7HtuFNS/2hu2zU1019kXchTVxxu8nWHCU+Mxj8Ke4vqZJ/W1+rCQU3lTkX3dQSXVDvhBXjXjxfa3B3kqdcKfjnPrIVB0n39Ve4sx4QfRdIDsKNrDwURfd0wzyLc9cPEeDdivtIrc+jV7OnVbK4CGcMN+PQoefS6g8ohQeQhOVz11H3SbfzxUl8XDYdUzwELOYRp+l8fDRYXxkme/nihJ5ONwEzovqq1IqD5VKYd1lSuahMNgDwh4Q9oCwB4Q9IOwBYQ8Ie0DYA8IeEPaAsAeEPSDsAWEPCHtA2APCHhD2gLAHhD0g7AFhDwh7QNgDwh4Q9oCwB4Q9IOwBYQ8Ie0DYA8IeEPaAsAeEPSDsAWEPCHtA2APCHhD2gLAHhD0g7AHRe3hS14b2/2P99df18Svq4eb2GrmJerhu2APCHhD2gLAHhD0g7AFhDwh7QNgDwh6QfwGWS978ujcGBgAAAABJRU5ErkJggg=="
-          class="w-5 h-5" alt="yahoo">
+        <img src="https://seeklogo.com/images/Y/yahoo-y-logo-B33E9D6FF7-seeklogo.com.png" class="w-5 h-5" alt="yahoo">
       </button>
       <button class="bg-gray-100 h-12 w-12 rounded-full text-white flex items-center justify-center">
         <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg"
